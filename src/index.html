@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ElementsPoll2</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="custom-home-element.js"></script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+ 
+</head>
+<body>
+  <div>
+    <!-- <input type="text" placeholder="Type something..." id="myInput1">
+    <input type="text" placeholder="Type something..." id="myInput2"> -->
+    <!-- <button type="button" onclick="getInputValue();">Get Value</button> -->
+    <home-custom id="elementid"></home-custom>
+
+  
+  </div>
+  <script>
+     const Button=document.querySelector('home-custom');
+    Button.addEventListener('action',(event)=>{
+      console.log(`"action": emitted:${event.detail}`)
+    });
+  //  function getInputValue()
+  //    {
+  //     //  document.getElementById('elementid').firstvalue = getTextBoxValue('myInput1');
+  //     //  document.getElementById('elementid').secondvalue = getTextBoxValue('myInput2');
+  //     document.getElementById('elementid').setAttribute("firstvalue",getTextBoxValue('myInput1'))
+  //     document.getElementById('elementid').setAttribute("secondvalue",getTextBoxValue('myInput2'))
+  //    }
+
+  //       function getTextBoxValue(textBoxId)
+  //    {
+  //        return document.getElementById(textBoxId).value;
+  //    }
+  </script>
+
+ 
+</body>
+</html>
